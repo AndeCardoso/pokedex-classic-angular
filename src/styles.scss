@@ -7,12 +7,18 @@
 html {
   font-family: 'Roboto', sans-serif;
   background-color: var(--primary);
+  body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--secondary)
+  }
 }
 
 main {
-  width: rem-calc(600);
+  max-width: rem-calc(600);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 rem-calc(20);
   box-sizing: border-box;
   background-color: var(--secondary);
   border-radius: rem-calc(10);
